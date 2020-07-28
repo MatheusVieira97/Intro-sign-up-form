@@ -32,7 +32,7 @@
       margin: 4rem 1.5rem 0rem; 
   }
 
-  p {
+  header > p {
     text-align: center;
     margin: 1.5rem 1.5rem 0rem; 
 
@@ -45,19 +45,21 @@
     padding: 1rem 3rem 1rem;
     background-color: var(--Blue);
     text-align: center;
+    box-shadow: 0 8px 10px -3px hsl(0, 0%, 44%);
   }
 
 
   /*Sign Up*/
-  div {
+  .sign-up {
       border-radius: 5px;
       margin: 1.5rem 1.5rem 0rem;
       background-color: rgb(255, 255, 255);
       display:flex;
       flex-direction: column;
+      box-shadow: 0 8px 10px -3px hsl(0, 0%, 44%);
   }
 
-  div > input {
+  .sign-up > input {
       height: 2.5rem;
       margin: 1rem 1rem 0rem;
       padding-left: 1rem;
@@ -69,24 +71,30 @@
       outline: 0;
   }
 
-  div > input:focus {
+  .sign-up > input:focus {
       border-color: var(--Red);
   }
 
-  div > button {
+  .sign-up > button {
       height: 3rem;
       border-radius: 5px;
       border-style: none;
       margin: 1rem 1rem 0rem;
       background-color: var(--Green);
+      transition-duration: 0.4s;
+      outline: 0;
   }
 
-  div > p {
+  .sign-up > button:hover {
+      background-color: hsl(154, 60%, 68%);
+  }
+
+  .sign-up > p {
       font-size: 0.8rem;
       color: var(--GrayishBlue);
       margin: 1rem 1rem 1.5rem;
   }
-  div > p > a {
+  .sign-up > p > a {
       font-size: 0.8rem;
       font-style: unset;
       font-weight: 600;
@@ -96,3 +104,72 @@
   /*Footer*/
 .attribution { font-size: 11px; text-align: center; margin-top:3rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 720px) {
+
+    body {
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    .container {
+        height: 80vh;
+        display:flex;
+        flex-direction: row;
+        margin: 2rem 2rem 2rem;
+    }
+
+    header {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    header > h1 {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    header > p {
+        text-align: left;
+    }
+
+    .container > div {
+        width: 50%;
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .sign-up {
+        padding: 1rem 1rem 1rem;
+    }
+
+    .attribution {
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        height: 85vh;
+        margin: 2rem 8rem 2rem;
+    }
+
+   header > h1 {
+       font-size: 2.5rem;
+   }
+
+   section {
+       height: max-content;
+       margin: 2rem 1.5rem 0rem;
+  }
+
+  .sign-up {
+    padding: 1.5rem 1.5rem 1.5rem;
+}
+
+}
