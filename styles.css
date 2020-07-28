@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  
+:root {
+    /*Primary Color*/
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /*Accent Color*/
+    --Blue: hsl(248, 32%, 49%);
+    /*Neutral Color*/
+    --DarkBlue: hsl(249, 10%, 26%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+  }
+
+  body {
+      background-image: url("./images/bg-intro-mobile.png");
+      background-color: var(--Red);
+  }
+
+  /*H1 and text*/
+  h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin: 4rem 1.5rem 0rem; 
+  }
+
+  p {
+    text-align: center;
+    margin: 1.5rem 1.5rem 0rem; 
+
+  }
+
+  /*7 days trial section*/
+  section {
+    border-radius: 5px;
+    margin: 3rem 1.5rem 0rem;
+    padding: 1rem 3rem 1rem;
+    background-color: var(--Blue);
+    text-align: center;
+  }
+
+
+  /*Sign Up*/
+  div {
+      border-radius: 5px;
+      margin: 1.5rem 1.5rem 0rem;
+      background-color: rgb(255, 255, 255);
+      display:flex;
+      flex-direction: column;
+  }
+
+  div > input {
+      height: 2.5rem;
+      margin: 1rem 1rem 0rem;
+      padding-left: 1rem;
+      border-radius: 5px;
+      border: 1px solid;
+      border-color: var(--GrayishBlue);
+      color:var(--Blue);
+      font-weight: 600;
+      outline: 0;
+  }
+
+  div > input:focus {
+      border-color: var(--Red);
+  }
+
+  div > button {
+      height: 3rem;
+      border-radius: 5px;
+      border-style: none;
+      margin: 1rem 1rem 0rem;
+      background-color: var(--Green);
+  }
+
+  div > p {
+      font-size: 0.8rem;
+      color: var(--GrayishBlue);
+      margin: 1rem 1rem 1.5rem;
+  }
+  div > p > a {
+      font-size: 0.8rem;
+      font-style: unset;
+      font-weight: 600;
+      color:var(--Red);
+  }
+
+  /*Footer*/
+.attribution { font-size: 11px; text-align: center; margin-top:3rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
