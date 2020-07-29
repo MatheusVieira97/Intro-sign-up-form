@@ -59,7 +59,7 @@
       box-shadow: 0 8px 10px -3px hsl(0, 0%, 44%);
   }
 
-  .sign-up > input {
+    input {
       height: 2.5rem;
       margin: 1rem 1rem 0rem;
       padding-left: 1rem;
@@ -71,8 +71,13 @@
       outline: 0;
   }
 
-  .sign-up > input:focus {
+  input:focus {
       border-color: var(--Red);
+  }
+
+  small {
+      color:var(--Blue);
+      display: none;
   }
 
   .sign-up > button {
